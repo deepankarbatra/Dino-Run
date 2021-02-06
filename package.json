@@ -1,0 +1,16 @@
+{
+  "name": "dinorun",
+  "version": "1.0.0",
+  "description": "its a simple and fun dino-obstacle game",
+  "main": "script.js",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "deepankar batra",
+  "license": "ISC"
+}

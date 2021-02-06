@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: yellow;
+    overflow: hidden;
+}
+
+.gameContainer{
+   background-image: url(/images/background.png);
+   background-repeat: no-repeat;
+   background-size: 100vw 100vh;
+   width: 100%;
+   height: 100vh;
+}
+
+.dino{
+    background-image: url("/images/dino.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 233px;
+    height: 114px;
+    position: absolute;
+    bottom: 0;
+}
+.gameOver{
+    top: 60px;
+    position: relative;
+    text-align: center;
+    font-size: 50px;
+    font-family: cursive;
+    color: rgb(255, 128, 0);
+}
+.obstacle{
+    width: 166px;
+    height: 113px;
+    background-image: url("/images/obstacle.png");
+    background-size: cover;
+    position: absolute;
+    bottom: 0;
+    left: 80vw;
+}
+
+.animateDino{
+    animation: dino 1s linear;
+}
+
+.obstacleAni{
+    animation: obstacleAni 5s linear infinite;
+}
+
+#scoreCont{
+
+    position: relative;
+    text-align: end;
+    padding: 10px;
+    top: -40px;
+    font-size: larger;
+    font-family: system-ui;
+    width: 136px;
+    border: solid aliceblue;
+    color: darkblue;
+}
+@keyframes dino{
+    0% {
+        bottom: 0;
+    }
+    50% {
+        bottom: 422px;
+    }
+    100% {
+        bottom: 0;
+    }
+}
+
+@keyframes obstacleAni{
+    0% {
+        left: 100vw;
+    }
+    100% {
+       left: -10vw;
+    }
+}
